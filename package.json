@@ -1,0 +1,25 @@
+{
+  "name": "multiplatform_ts_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "desktop": "webpack --config webpack.desktop.conf.js --mode=production",
+    "editor": "webpack --config webpack.editor.conf.js --mode=production",
+    "mobile": "webpack --config webpack.mobile.conf.js --mode=production",
+    "server_d": "webpack-dev-server --config webpack.desktop.conf.js",
+    "server_e": "webpack-dev-server --config webpack.editor.conf.js",
+    "server_m": "webpack-dev-server --config webpack.mobile.conf.js"
+  },
+  "author": "Teo_Young",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "webpack": "^4.42.1"
+  }
+}
